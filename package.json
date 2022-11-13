@@ -16,7 +16,8 @@
     "mochawesome-report-generator": "^6.2.0"
   },
   "scripts": {
-    "test": "mocha"
+    "test": "mocha",
+    "coverage": "c8 --reporter=lcovonly"
   },
   "author": "",
   "license": "ISC"
