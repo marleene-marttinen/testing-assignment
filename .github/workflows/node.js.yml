@@ -26,7 +26,7 @@ jobs:
       with:
         node-version: ${{ matrix.node-version }}
         cache: 'npm'
-        github-token: ${{ secret.me_token }}
+        github-token: ${{ secrets.me_token }}
         
         
     - name: npm install
