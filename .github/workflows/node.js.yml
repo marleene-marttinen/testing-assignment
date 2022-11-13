@@ -26,12 +26,6 @@ jobs:
     - name: npm install
       run: npm install
       
-    - name: Coveralls
-      uses: coverallsapp/github-action@master
-      with:
-        github-token: ${{ secrets.me_token }}
-        path-to-lcov: ./coverage/tmp
-      
     - run: npm ci
     - run: npm run build --if-present
     - run: npm test
