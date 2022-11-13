@@ -1,0 +1,19 @@
+{
+  "name": "testing-assignment",
+  "version": "1.0.0",
+  "description": "",
+  "main": "isObjectLike.js",
+  "directories": {
+    "test": "test"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "chai": "^4.3.7",
+    "mocha": "^10.1.0"
+  },
+  "scripts": {
+    "test": "mocha"
+  },
+  "author": "",
+  "license": "ISC"
+}
