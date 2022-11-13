@@ -17,7 +17,7 @@
   },
   "scripts": {
     "test": "mocha",
-    "coverage": "c8 --reporter=lcovonly"
+    "coverage": "c8 --reporter=lcovonly npm test"
   },
   "author": "",
   "license": "ISC"
