@@ -30,7 +30,7 @@ jobs:
       uses: coverallsapp/github-action@master
       with:
         github-token: ${{ secrets.me_token }}
-        path-to-lcov: ./testing-assignment/coverage
+        path-to-lcov: ./coverage/tmp
       
     - run: npm ci
     - run: npm run build --if-present
