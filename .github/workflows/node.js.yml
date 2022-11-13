@@ -32,9 +32,6 @@ jobs:
       with:
         # 
           github-token: ${{secrets.me_token}}
-          # Path to lcov file
-          path-to-lcov: ./coverage/lcov.info
-          # Job flag name, e.g. "Unit", "Functional", or "Integration". Will be shown in the Coveralls UI.
       
     - run: npm ci
     - run: npm run build --if-present
