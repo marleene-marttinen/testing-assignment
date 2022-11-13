@@ -31,7 +31,8 @@ jobs:
       
     - run: npm ci
     - run: npm run build --if-present
-    - run: c8 --reporter=lcovonly npm test
+    - run: npm test
+    - run: npm run coverage
     
     - name: Coveralls
       uses: coverallsapp/github-action@master
