@@ -25,4 +25,4 @@
     return typeof value === 'object' && value !== null
   }
   
-  export default isObjectLike
+  module.exports = isObjectLike
