@@ -7,50 +7,123 @@ const MAX_SAFE_INTEGER = 9007199254740991
 describe("isLength", () => {
 
     it("Should return true with integer", ()=>{
-        expect(isLength(1)).to.be.true;
+        // Arrange
+        const value = 1;
+
+        // Act
+        const result = isLength(value);
+
+        // Assert
+        expect(result).to.be.true;
     }),
 
     it("Should return true with 0", ()=>{
-        expect(isLength(0)).to.be.true;
+        // Arrange
+        const value = 0;
+
+        // Act
+        const result = isLength(value);
+
+        // Assert
+        expect(result).to.be.true;
     }),
 
     it("Should return false with a negative number", ()=>{
-        expect(isLength(-1)).to.be.false;
+        // Arrange
+        const value = -1;
+
+        // Act
+        const result = isLength(value);
+
+        // Assert
+        expect(result).to.be.false;
     }),
 
     it("Should return false with string", ()=>{
-        expect(isLength("1")).to.be.false;
+        // Arrange
+        const value = "1";
+
+        // Act
+        const result = isLength(value);
+
+        // Assert
+        expect(result).to.be.false;
     }),
 
     it("Should return false with float", ()=>{
-        expect(isLength(1.2)).to.be.false;
+        // Arrange
+        const value = 1.2;
+
+        // Act
+        const result = isLength(value);
+
+        // Assert
+        expect(result).to.be.false;
     }),
 
     it("Should return false with boolean value true", ()=>{
-        expect(isLength(true)).to.be.false;
+        // Arrange
+        const value = true;
+
+        // Act
+        const result = isLength(value);
+
+        // Assert
+        expect(result).to.be.false;
     }),
 
     it("Should return false with boolean value false", ()=>{
-        expect(isLength(false)).to.be.false;
+        // Arrange
+        const value = false;
+
+        // Act
+        const result = isLength(value);
+
+        // Assert
+        expect(result).to.be.false;
     }),
 
     it("Should return false with null", ()=>{
-        expect(isLength(null)).to.be.false;
+        // Arrange
+        const value = null;
+
+        // Act
+        const result = isLength(value);
+
+        // Assert
+        expect(result).to.be.false;
     }),
 
     it("Should return false with infinity value", ()=>{
-        expect(isLength(Infinity)).to.be.false;
+        // Arrange
+        const value = Infinity;
+
+        // Act
+        const result = isLength(value);
+
+        // Assert
+        expect(result).to.be.false;
     }),
 
     it("Should return false with Number.MIN_VALUE", ()=>{
-        expect(isLength(Number.MIN_VALUE)).to.be.false;
-    }),
+        // Arrange
+        const value = Number.MIN_VALUE;
 
-    it("Should return true with MAX_SAFE_INTEGER", ()=>{
-        expect(isLength(MAX_SAFE_INTEGER)).to.be.true;
+        // Act
+        const result = isLength(value);
+
+        // Assert
+        expect(result).to.be.false;
     }),
 
     it("Should return false with integers over MAX_SAFE_INTEGER", ()=>{
-        expect(isLength(MAX_SAFE_INTEGER+1)).to.be.false;
+        // Arrange
+        const value = MAX_SAFE_INTEGER+1;
+
+        // Act
+        const result = isLength(value);
+
+        // Assert
+        expect(result).to.be.false;
     });
 })
