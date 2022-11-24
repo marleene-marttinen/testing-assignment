@@ -1,7 +1,8 @@
 {
+  "type": "module",
   "name": "testing-assignment",
   "version": "1.0.0",
-  "description": "",
+  "description": "COMP.SE.200-2022-2023: Assignment - Part 2 - Executing the tests",
   "main": "index.js",
   "directories": {
     "test": "test"
@@ -20,5 +21,15 @@
     "coverage": "c8 --reporter=lcovonly --exclude ['.internal'] npm test"
   },
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/marleene-marttinen/testing-assignment.git"
+  },
+  "keywords": [],
+  "bugs": {
+    "url": "https://github.com/marleene-marttinen/testing-assignment/issues"
+  },
+  "homepage": "https://github.com/marleene-marttinen/testing-assignment#readme"
 }

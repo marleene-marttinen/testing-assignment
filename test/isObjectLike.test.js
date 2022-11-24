@@ -1,7 +1,6 @@
-var chai = require("chai");
-const isObjectLike = require("../isObjectLike.js");
+import chai from 'chai';
+import isObjectLike from './../isObjectLike.js';
 const expect = chai.expect
-
 
 describe("isObjectLike", () => {
 

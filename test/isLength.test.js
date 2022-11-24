@@ -1,5 +1,5 @@
-var chai = require("chai");
-const isLength = require("../isLength.js");
+import chai from 'chai';
+import isLength from './../isLength.js';
 const expect = chai.expect
 const MAX_SAFE_INTEGER = 9007199254740991
 
