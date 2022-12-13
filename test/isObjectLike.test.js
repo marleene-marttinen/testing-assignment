@@ -37,17 +37,6 @@ describe("isObjectLike", () => {
         expect(result).to.be.true;
     }),
 
-    it("Should return true when value is a Boolean object (false)", ()=>{
-        // Arrange
-        const value = new Boolean(false);
-
-        // Act
-        const result = isObjectLike(value);
-
-        // Assert
-        expect(result).to.be.true;
-    }),
-
     it("Should return true when value is a Number object", ()=>{
         // Arrange
         const value = new Number("1");
