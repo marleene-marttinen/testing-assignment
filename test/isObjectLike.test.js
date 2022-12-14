@@ -104,7 +104,7 @@ describe("isObjectLike", () => {
     }),
     
 
-    it("Should return false when value is an object", ()=>{
+    it("Should return true when value is an object", ()=>{
         // Arrange
         const value = {type: "Candle", price: 5};
 
