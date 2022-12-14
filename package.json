@@ -18,7 +18,7 @@
   },
   "scripts": {
     "test": "mocha",
-    "coverage": "c8 --reporter=lcovonly --all --exclude '.internal/**' --exclude 'coverage/**' --exclude 'mochawesome-report/**' --exclude 'test/**' --exclude 'index.js' npm test"
+    "coverage": "c8 --reporter=lcovonly --all --exclude 'src/.internal/**' --exclude 'coverage/**' --exclude 'mochawesome-report/**' --exclude 'test/**' --exclude 'src/index.js' npm test"
   },
   "author": "",
   "license": "ISC",
