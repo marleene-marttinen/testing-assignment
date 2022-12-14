@@ -1,5 +1,5 @@
 import chai from 'chai';
-import toInteger from './../toInteger.js';
+import toInteger from '../src/toInteger.js';
 const expect = chai.expect
 
 describe("toInteger", () => {

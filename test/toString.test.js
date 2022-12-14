@@ -1,5 +1,5 @@
 import chai from 'chai';
-import toString from './../toString.js';
+import toString from '../src/toString.js';
 const expect = chai.expect
 
 describe("toString", () => {

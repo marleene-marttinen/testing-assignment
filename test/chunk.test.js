@@ -1,5 +1,5 @@
 import chai from 'chai';
-import chunk from './../chunk.js';
+import chunk from '../src/chunk.js';
 const expect = chai.expect
 
 

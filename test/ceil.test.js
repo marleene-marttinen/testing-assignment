@@ -1,5 +1,5 @@
 import chai from 'chai';
-import ceil from './../ceil.js';
+import ceil from '../src/ceil.js';
 const expect = chai.expect
 
 describe("ceil", () => {

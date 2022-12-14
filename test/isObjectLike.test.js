@@ -1,5 +1,5 @@
 import chai from 'chai';
-import isObjectLike from './../isObjectLike.js';
+import isObjectLike from '../src/isObjectLike.js';
 const expect = chai.expect
 
 describe("isObjectLike", () => {

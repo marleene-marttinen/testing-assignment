@@ -1,5 +1,5 @@
 import chai from 'chai';
-import isEmpty from './../isEmpty.js';
+import isEmpty from '../src/isEmpty.js';
 const expect = chai.expect
 
 

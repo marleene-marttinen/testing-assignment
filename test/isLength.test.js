@@ -1,5 +1,5 @@
 import chai from 'chai';
-import isLength from './../isLength.js';
+import isLength from '../src/isLength.js';
 const expect = chai.expect
 const MAX_SAFE_INTEGER = 9007199254740991
 

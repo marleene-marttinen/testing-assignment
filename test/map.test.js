@@ -1,5 +1,5 @@
 import chai from 'chai';
-import map from './../map.js';
+import map from '../src//map.js';
 const expect = chai.expect
 
 describe("map", () => {
