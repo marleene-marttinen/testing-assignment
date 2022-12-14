@@ -14,7 +14,6 @@ describe("reduce", () => {
         const result= reduce([1, 2], (sum, n) => sum + n, 0)
 
         //Assert
-        console.log(result);
         expect(result).equal(3);
     });
 
