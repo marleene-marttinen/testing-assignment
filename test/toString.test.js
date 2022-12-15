@@ -13,7 +13,6 @@ describe("toString", () => {
         const result = toString(value);
 
         //Assert
-        console.log(result);
         expect(result).to.deep.equal('');
     });
 

@@ -40,19 +40,6 @@ describe("ceil", () => {
         expect(result).to.deep.equal(167.13);
 
     }),
-    
-    it("Should return rounded negative number with two decimals", ()=>{
-        // Arrange
-        const value = -15.98989898;
-        const precision = 2;
-
-        // Act
-        const result = ceil(value, precision);
-
-        // Assert
-        expect(result).to.deep.equal(-15.99);
-
-    }),
 
     it("Should return rounded number with negative precision", ()=>{
         // Arrange
