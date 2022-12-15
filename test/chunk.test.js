@@ -18,6 +18,18 @@ describe("chunk", () => {
         expect(result).to.deep.equal([]);
     }),
 
+    it("Should return an empty array when the array is null", ()=>{
+        // Arrange
+        const array = null;
+        const size = 2;
+
+        // Act
+        const result = chunk(array, size);
+
+        // Assert
+        expect(result).to.deep.equal([]);
+    }),
+
     it("Should return an empty array when an empty array is given", ()=>{
         // Arrange
         const array = [];

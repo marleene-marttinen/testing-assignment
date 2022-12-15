@@ -32,14 +32,14 @@ describe("words", () => {
 
     it("Should return an array with 3 items in it when the string contains ascii letters and the pattern is undefined", ()=>{
         // Arrange
-        const string = 'kynttilä, pyyhe, saippua';
+        const string = 'A, b, C';
         const pattern = undefined
 
         // Act
         const result = words(string, pattern);
 
         // Assert
-        expect(result).to.deep.equal(['kynttilä', 'pyyhe', 'saippua']);
+        expect(result).to.deep.equal(['A', 'b', 'C']);
     }),
     
     it("Should return an empty array if the string is empty and the pattern is defined", ()=>{
@@ -64,18 +64,6 @@ describe("words", () => {
 
         // Assert
         expect(result).to.deep.equal([""]);
-    }),
-    
-    it("Should return an array with 3 items in it when the string contains ascii letters and the pattern is defined", ()=>{
-        // Arrange
-        const string = 'kynttilä, pyyhe, saippua';
-        const pattern = /[^, ]+/g
-
-        // Act
-        const result = words(string, pattern);
-
-        // Assert
-        expect(result).to.deep.equal(['kynttilä', 'pyyhe', 'saippua']);
     });
 
 })
