@@ -12,7 +12,7 @@ describe("ceil", () => {
         const result = ceil(value);
 
         // Assert
-        expect(result).equal(5);
+        expect(result).to.deep.equal(5);
     }),
 
     it("Should return rounded number with two decimals", ()=>{
@@ -24,7 +24,20 @@ describe("ceil", () => {
         const result = ceil(value, decimals);
 
         // Assert
-        expect(result).equal(6.01);
+        expect(result).to.deep.equal(6.01);
+
+    }),
+
+    it("Should return second rounded number with two decimals", ()=>{
+        // Arrange
+        const value = 167.125;
+        const precision = 2;
+
+        // Act
+        const result = ceil(value, precision);
+
+        // Assert
+        expect(result).to.deep.equal(167.13);
 
     }),
 
@@ -37,7 +50,7 @@ describe("ceil", () => {
         const result = ceil(value, precision);
 
         // Assert
-        expect(result).equal(6100);
+        expect(result).to.deep.equal(6100);
 
     })
 });

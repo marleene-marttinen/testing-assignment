@@ -3,6 +3,18 @@ import toInteger from '../src/toInteger.js';
 const expect = chai.expect
 
 describe("toInteger", () => {
+    it("Should return value as integer", ()=>{
+
+        // Arrange
+        const value = 180;
+
+        // Act
+        const result = toInteger(value);
+
+        //Assert
+        expect(result).to.deep.equal(180);
+    });
+
     it("Should return value without decimals as integer", ()=>{
 
         // Arrange
@@ -12,7 +24,7 @@ describe("toInteger", () => {
         const result = toInteger(value);
 
         //Assert
-        expect(result).equal(1);
+        expect(result).to.deep.equal(1);
     });
 
     it("Should return negative value converted as integer", ()=> {
@@ -24,7 +36,7 @@ describe("toInteger", () => {
         const result = toInteger(value);
 
         //Assert
-        expect(result).equal(-15);
+        expect(result).to.deep.equal(-15);
     });
 
     it("Should return 0 as minimum value", ()=> {
@@ -36,7 +48,7 @@ describe("toInteger", () => {
         const result = toInteger(value);
 
         //Assert
-        expect(result).equal(0);
+        expect(result).to.deep.equal(0);
     });
 
     it("Should return infinity", ()=> {
@@ -48,6 +60,6 @@ describe("toInteger", () => {
         const result = toInteger(value);
 
         //Assert
-        expect(result).equal(1.7976931348623157e+308);
+        expect(result).to.deep.equal(1.7976931348623157e+308);
     });
 });
