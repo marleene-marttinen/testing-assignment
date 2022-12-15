@@ -44,7 +44,7 @@ describe("chunk", () => {
     }),
     
     //Fails because of a bug
-    xit("Should return two arrays of different lengths when the given value is an odd number", ()=>{
+    it("Should return two arrays of different lengths when the given value is an odd number", ()=>{
         // Arrange
         const array = ['a', 'b', 'c', 'd'];
         const size = 3;
