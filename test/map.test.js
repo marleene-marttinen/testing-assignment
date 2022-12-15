@@ -14,7 +14,7 @@ describe("map", () => {
         const result = map([10.00, 19.90, 46.70], halfPrice);
 
         //Assert
-        expect(result).contains(5.00, 9.95, 23.35);
+        expect(result).to.deep.include(5.00, 9.95, 23.35);
     });
 
     it("Should return the correct prices with discount percent of 10%", ()=> {
@@ -28,7 +28,7 @@ describe("map", () => {
         const result = map([10.00, 19.90, 46.70], discount10);
 
         //Assert
-        expect(result).contains(9.00, 17.91, 42.03);
+        expect(result).to.deep.include(9.00, 17.91, 42.03);
     });
 
     it("Should return same prices when discount is 0", ()=> {
@@ -42,7 +42,7 @@ describe("map", () => {
         const result = map([10, 20], discount);
 
         //Assert
-        expect(result).contains(10, 20);
+        expect(result).to.deep.include(10, 20);
     });
 
     it("Should return empty list when values null", ()=> {
