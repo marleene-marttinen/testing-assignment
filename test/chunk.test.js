@@ -31,7 +31,7 @@ describe("chunk", () => {
     }),
     
     //Fails because of a bug
-    xit("Should return one item arrays when the size is 1", ()=>{
+    it("Should return one item arrays when the size is 1", ()=>{
         // Arrange
         const array = ['a', 'b', 'c', 'd'];
         const size = 1;
