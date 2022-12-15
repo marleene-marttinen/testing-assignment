@@ -30,16 +30,16 @@ describe("words", () => {
         expect(result).to.deep.equal(['fred', 'barney', '&', 'pebbles']);
     }),
 
-    it("Should return an array with 3 items in it when the string contains ascii letters and the pattern is undefined", ()=>{
+    it("Should return an array with 2 items in it when the string contains ascii letters and the pattern is undefined", ()=>{
         // Arrange
-        const string = 'A, b, C';
+        const string = 'a b';
         const pattern = undefined
 
         // Act
         const result = words(string, pattern);
 
         // Assert
-        expect(result).to.deep.equal(['A', 'b', 'C']);
+        expect(result).to.deep.equal(['a', 'b']);
     }),
     
     it("Should return an empty array if the string is empty and the pattern is defined", ()=>{
