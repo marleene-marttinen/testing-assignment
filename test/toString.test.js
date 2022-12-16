@@ -4,7 +4,7 @@ const expect = chai.expect
 
 describe("toString", () => {
     // Fails because of bug -> should return empty string but returns null
-    xit("Should return null as empty string", ()=>{
+    it("Should return null as empty string", ()=>{
 
         // Arrange
         const value = null;
@@ -17,7 +17,7 @@ describe("toString", () => {
     });
 
     //Fails because of bug -> should return empty string but returns undefined
-    xit("Should return undefined as empty string", ()=>{
+    it("Should return undefined as empty string", ()=>{
 
         // Arrange
 
